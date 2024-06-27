@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile first */
+header,
+footer{
+    height: 200px;
+    border: 2px solid grey;
+    background-color: lightgray;
+}
+
+section {
+    height: 400px;
+    border: 2px solid grey;
+    background-color: lightsteelblue;
+
+}
+
+@media screen and (min-width: 600px){
+    header,
+    footer{
+        clear: both;
+    }
+
+    section {
+        width: 33.33%;
+        height: 400px;
+        border: 2px solid grey;
+        background-color: lightsteelblue;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 900px){
+    section {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    section {
+        float: left;
+    }
+}
